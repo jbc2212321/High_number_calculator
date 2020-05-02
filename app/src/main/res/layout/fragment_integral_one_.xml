@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".integral_one_Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05109489" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+        <TextView
+                android:id="@+id/integral_one_textView_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/latex"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/integral_one_textView_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/integral_one_textView_display" />
+
+        <TextView
+                android:id="@+id/integral_one_textView_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/low"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/integral_one_textView_3"
+                app:layout_constraintEnd_toEndOf="@+id/integral_one_textView_4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/integral_one_textView_4"
+                app:layout_constraintTop_toBottomOf="@+id/integral_one_textView_4" />
+
+        <TextView
+                android:id="@+id/integral_one_textView_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/up"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/integral_one_editText_3"
+                app:layout_constraintEnd_toEndOf="@+id/integral_one_textView_2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/integral_one_textView_2"
+                app:layout_constraintTop_toTopOf="@+id/integral_one_editText_3" />
+
+        <EditText
+                android:id="@+id/integral_one_editText_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/integral_one_editText_4"
+                app:layout_constraintEnd_toEndOf="@+id/integral_one_editText_4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/integral_one_editText_4"
+                app:layout_constraintTop_toBottomOf="@+id/integral_one_editText_1" />
+
+        <EditText
+                android:id="@+id/integral_one_editText_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/integral_one_editText_2"
+                app:layout_constraintEnd_toEndOf="@+id/integral_one_editText_2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/integral_one_editText_2"
+                app:layout_constraintTop_toBottomOf="@+id/integral_one_textView_display" />
+
+        <EditText
+                android:id="@+id/integral_one_editText_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/integral_one_button1"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toEndOf="@+id/integral_one_textView_3"
+                app:layout_constraintTop_toBottomOf="@+id/integral_one_editText_4" />
+
+        <Button
+                android:id="@+id/integral_one_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <Button
+                android:id="@+id/integral_one_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                app:layout_constraintBottom_toTopOf="@+id/guideline7"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <TextView
+                android:id="@+id/integral_one_textView_display"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <TextView
+                android:id="@+id/integral_one_textView_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/variable"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/integral_one_textView_2"
+                app:layout_constraintEnd_toEndOf="@+id/integral_one_textView_1"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/integral_one_textView_1"
+                app:layout_constraintTop_toBottomOf="@+id/integral_one_textView_1" />
+
+        <EditText
+                android:id="@+id/integral_one_editText_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/integral_one_editText_3"
+                app:layout_constraintEnd_toEndOf="@+id/integral_one_editText_3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/integral_one_editText_3"
+                app:layout_constraintTop_toBottomOf="@+id/integral_one_editText_2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

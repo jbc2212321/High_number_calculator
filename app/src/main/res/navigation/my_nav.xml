@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/my_nav"
+        app:startDestination="@id/homeFragment">
+
+    <fragment
+            android:id="@+id/homeFragment"
+            android:name="com.example.sympyandroid002.HomeFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_home" >
+        <action
+                android:id="@+id/action_homeFragment_to_diffFragment"
+                app:destination="@id/diffFragment" />
+        <action
+                android:id="@+id/action_homeFragment_to_talyorFragment"
+                app:destination="@id/talyorFragment" />
+        <action
+                android:id="@+id/action_homeFragment_to_integral_one_Fragment"
+                app:destination="@id/integral_one_Fragment" />
+        <action
+                android:id="@+id/action_homeFragment_to_integral_two_Fragment"
+                app:destination="@id/integral_two_Fragment" />
+        <action
+                android:id="@+id/action_homeFragment_to_latexFragment"
+                app:destination="@id/latexFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/diffFragment"
+            android:name="com.example.sympyandroid002.DiffFragment"
+            android:label="fragment_diff"
+            tools:layout="@layout/fragment_diff" >
+        <action
+                android:id="@+id/action_diffFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/talyorFragment"
+            android:name="com.example.sympyandroid002.talyorFragment"
+            android:label="fragment_talyor"
+            tools:layout="@layout/fragment_talyor" >
+        <action
+                android:id="@+id/action_talyorFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/integral_one_Fragment"
+            android:name="com.example.sympyandroid002.integral_one_Fragment"
+            android:label="fragment_integral_one_"
+            tools:layout="@layout/fragment_integral_one_" >
+        <action
+                android:id="@+id/action_integral_one_Fragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/integral_two_Fragment"
+            android:name="com.example.sympyandroid002.integral_two_Fragment"
+            android:label="fragment_integral_two_"
+            tools:layout="@layout/fragment_integral_two_" >
+        <action
+                android:id="@+id/action_integral_two_Fragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/latexFragment"
+            android:name="com.example.sympyandroid002.LatexFragment"
+            android:label="fragment_latex"
+            tools:layout="@layout/fragment_latex" >
+        <action
+                android:id="@+id/action_latexFragment_to_homeFragment"
+                app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">高数计算器</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="latex">latex公式:</string>
+    <string name="variable">变量:</string>
+    <string name="order_number">阶数:</string>
+    <string name="submit">确认</string>
+    <string name="back">返回</string>
+    <string name="diff">函数偏导</string>
+    <string name="Taylor">泰勒展开</string>
+    <string name="one_integral">一重积分</string>
+    <string name="two_integral">二重积分</string>
+    <string name="order">阶数:</string>
+    <string name="x0">x0:</string>
+    <string name="up">上界:</string>
+    <string name="low">下界:</string>
+
+    <string name="frac">\\frac</string>
+    <string name="sqrt">\\sqrt</string>
+    <string name="superscript">^</string>
+    <string name="subscript">_</string>
+    <string name="pi">\\pi</string>
+    <string name="xkuohao">()</string>
+    <string name="kuohao">[]</string>
+    <string name="dkuohao">{}</string>
+    <string name="clear">清空</string>
+    <string name="reveal">显示</string>
+    <string name="log">\\log</string>
+    <string name="ln">\\ln</string>
+    <string name="lg">\\lg</string>
+    <string name="tan">\\tan</string>
+    <string name="sin">\\sin</string>
+    <string name="cos">\\cos</string>
+    <string name="arcsin">\\arcsin</string>
+    <string name="arccos">\\arccos</string>
+    <string name="arctan">\\arctan</string>
+    <string name="e">e</string>
+    <string name="latexinput">latex编辑</string>
+
+</resources>

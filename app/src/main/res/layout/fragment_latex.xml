@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".LatexFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05109489" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+        <EditText
+                android:id="@+id/latex_editText_input"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/guideline2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+        <TextView
+                android:id="@+id/latex_textview_display"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <Button
+                android:id="@+id/latex_ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/ln"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_sb"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/latex_sb" />
+
+        <Button
+                android:id="@+id/latex_frac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/frac"
+                app:layout_constraintBottom_toTopOf="@+id/latex_xkuohao"
+                app:layout_constraintEnd_toStartOf="@+id/latex_sqrt"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/latex_textview_display" />
+
+        <Button
+                android:id="@+id/latex_lg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/lg"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_xkuohao"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="@+id/latex_sqrt"
+                app:layout_constraintTop_toBottomOf="@+id/latex_frac" />
+
+        <Button
+                android:id="@+id/latex_xkuohao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/xkuohao"
+                app:layout_constraintBottom_toTopOf="@+id/latex_sb"
+                app:layout_constraintEnd_toEndOf="@+id/latex_frac"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/latex_frac"
+                app:layout_constraintTop_toBottomOf="@+id/latex_frac" />
+
+        <Button
+                android:id="@+id/latex_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/reveal"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_e"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/latex_e" />
+
+        <Button
+                android:id="@+id/latex_pi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/pi"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                app:layout_constraintEnd_toEndOf="@+id/latex_dkuohao"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/latex_dkuohao"
+                app:layout_constraintTop_toBottomOf="@+id/latex_dkuohao" />
+
+        <Button
+                android:id="@+id/latex_arccos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/arccos"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_lg"
+                app:layout_constraintEnd_toEndOf="@+id/latex_arcsin"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/latex_lg" />
+
+        <Button
+                android:id="@+id/latex_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/e"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_pi"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="@+id/latex_log"
+                app:layout_constraintTop_toTopOf="@+id/latex_pi" />
+
+        <Button
+                android:id="@+id/latex_arctan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/arctan"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_ln"
+                app:layout_constraintEnd_toEndOf="@+id/latex_arccos"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/latex_ln"
+                app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+                android:id="@+id/latex_cos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/cos"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_arccos"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/latex_sin"
+                app:layout_constraintTop_toTopOf="@+id/latex_arccos" />
+
+        <Button
+                android:id="@+id/latex_sqrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/sqrt"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_frac"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/latex_frac"
+                app:layout_constraintVertical_bias="0.333" />
+
+        <Button
+                android:id="@+id/latex_arcsin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/arcsin"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_sqrt"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/latex_sqrt"
+                app:layout_constraintVertical_bias="0.009" />
+
+        <Button
+                android:id="@+id/latex_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/sin"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_arcsin"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="@+id/latex_arcsin"
+                app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+                android:id="@+id/latex_tan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/tan"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/latex_cos"
+                app:layout_constraintTop_toBottomOf="@+id/latex_arccos" />
+
+        <Button
+                android:id="@+id/latex_sb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/superscript"
+                app:layout_constraintBottom_toTopOf="@+id/latex_dkuohao"
+                app:layout_constraintEnd_toEndOf="@+id/latex_xkuohao"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/latex_xkuohao"
+                app:layout_constraintTop_toBottomOf="@+id/latex_xkuohao" />
+
+        <Button
+                android:id="@+id/latex_dkuohao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/dkuohao"
+                app:layout_constraintBottom_toTopOf="@+id/latex_pi"
+                app:layout_constraintEnd_toEndOf="@+id/latex_sb"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/latex_sb"
+                app:layout_constraintTop_toBottomOf="@+id/latex_sb" />
+
+        <Button
+                android:id="@+id/latex_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/back"
+                app:layout_constraintBottom_toTopOf="@+id/guideline3"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <Button
+                android:id="@+id/latex_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/clear"
+                app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/latex_tan"
+                app:layout_constraintTop_toTopOf="@+id/latex_display"
+                app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+                android:id="@+id/latex_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nor_down"
+                android:gravity="center"
+                android:text="@string/log"
+                app:layout_constraintBottom_toBottomOf="@+id/latex_dkuohao"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="@+id/latex_ln"
+                app:layout_constraintTop_toTopOf="@+id/latex_dkuohao" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
